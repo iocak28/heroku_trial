@@ -779,8 +779,9 @@ server = app.server
 
 if __name__ == '__main__':
     model = joblib.load("LR_prediction.joblib")
-    app.run_server(debug=True)
+    #app.run_server(debug=True)
     #application.run_server(host='0.0.0.0', port=8050, debug=True)
     #application.run(debug=True, port=8080)
     #application.run_server(host='0.0.0.0')
     #app.run_server(host="0.0.0.0")
+    app.run_server()
