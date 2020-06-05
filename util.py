@@ -11,7 +11,8 @@ from sklearn.metrics import confusion_matrix
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 #from xgboost import XGBClassifier
-from sklearn.externals import joblib
+#from sklearn.externals import joblib
+import joblib
 
 from src import feature_extraction as feat
 from src import pre_processing as pp
