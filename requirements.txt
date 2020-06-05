@@ -1,0 +1,17 @@
+dash
+dash-renderer
+dash-core-components
+dash-html-components
+dash-table
+plotly
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+xgboost
+scikit-learn
+coverage
+pytest
+joblib
+gunicorn

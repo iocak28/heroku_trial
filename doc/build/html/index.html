@@ -1,0 +1,914 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="Python" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="Python" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to ECE 229 Group 6 Project&#39;s documentation! &mdash; ECE 229 Project 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> ECE 229 Project
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Welcome to ECE 229 Group 6 Project's documentation!</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#package-dependencies">Package Dependencies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#module-visualization.analysis">Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#result-prediction">Result Prediction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#module-dashboard">DashBoard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#module-test.generate_coverage_report">Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ECE 229 Project</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to ECE 229 Group 6 Project's documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-ece-229-group-6-project-s-documentation">
+<h1>Welcome to ECE 229 Group 6 Project's documentation!<a class="headerlink" href="#welcome-to-ece-229-group-6-project-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>This project is a <strong>Bank Telecaller Decision Support System</strong>.</p>
+<p>The main purpose is to help bank manager and telecaller quickly target customers who are more likely to subscribe to their product.</p>
+<div class="section" id="package-dependencies">
+<h2>Package Dependencies<a class="headerlink" href="#package-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>The project depends on plotly, dash, numpy, pandas, sklearn, xgboost and scikit-learn, etc. The packge version is listed below:</p>
+<p><strong>For Data Analysis:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-&gt;</span><span class="n">plotly</span>                        <span class="mf">4.4</span><span class="o">.</span><span class="mi">1</span>
+<span class="o">-&gt;</span><span class="n">numpy</span>                         <span class="mf">1.16</span><span class="o">.</span><span class="mi">4</span>
+<span class="o">-&gt;</span><span class="n">pandas</span>                        <span class="mf">0.24</span><span class="o">.</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p><strong>For Prediction:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-&gt;</span><span class="n">xgboost</span>                       <span class="mf">1.1</span><span class="o">.</span><span class="mi">0</span>
+<span class="o">-&gt;</span><span class="n">sklearn</span>                       <span class="mf">0.0</span>
+<span class="o">-&gt;</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span>                  <span class="mf">0.22</span><span class="o">.</span><span class="mf">2.</span><span class="n">post1</span>
+<span class="o">-&gt;</span><span class="n">pandas</span>                        <span class="mf">1.0</span><span class="o">.</span><span class="mi">3</span>
+<span class="o">-&gt;</span><span class="n">numpy</span>                         <span class="mf">1.18</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p><strong>For Dashboard Development:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-&gt;</span><span class="n">dash</span>                          <span class="mf">1.12</span><span class="o">.</span><span class="mi">0</span>
+<span class="o">-&gt;</span><span class="n">dash</span><span class="o">-</span><span class="n">core</span><span class="o">-</span><span class="n">components</span>          <span class="mf">1.10</span><span class="o">.</span><span class="mi">0</span>
+<span class="o">-&gt;</span><span class="n">dash</span><span class="o">-</span><span class="n">html</span><span class="o">-</span><span class="n">components</span>          <span class="mf">1.0</span><span class="o">.</span><span class="mi">3</span>
+<span class="o">-&gt;</span><span class="n">dash</span><span class="o">-</span><span class="n">renderer</span>                 <span class="mf">1.4</span><span class="o">.</span><span class="mi">1</span>
+<span class="o">-&gt;</span><span class="n">dash</span><span class="o">-</span><span class="n">table</span>                    <span class="mf">4.7</span><span class="o">.</span><span class="mi">0</span>
+<span class="o">-&gt;</span><span class="n">plotly</span>                        <span class="mf">4.8</span><span class="o">.</span><span class="mi">0</span>
+</pre></div>
+</div>
+<p><strong>For Test:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-&gt;</span><span class="n">coverage</span>                      <span class="mf">5.1</span>
+<span class="o">-&gt;</span><span class="n">pytest</span>                        <span class="mf">5.0</span><span class="o">.</span><span class="mi">1</span>
+<span class="o">-&gt;</span><span class="n">numpy</span>                         <span class="mf">1.16</span><span class="o">.</span><span class="mi">4</span>
+<span class="o">-&gt;</span><span class="n">pandas</span>                        <span class="mf">0.24</span><span class="o">.</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+<div class="section" id="module-visualization.analysis">
+<span id="data-analysis"></span><h1>Data Analysis<a class="headerlink" href="#module-visualization.analysis" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="visualization.analysis.FeatureAnalysis">
+<em class="property">class </em><code class="sig-prename descclassname">visualization.analysis.</code><code class="sig-name descname">FeatureAnalysis</code><span class="sig-paren">(</span><em class="sig-param">csv_path</em><span class="sig-paren">)</span><a class="headerlink" href="#visualization.analysis.FeatureAnalysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exposes DataFrames with binned ages <cite>self.df_binned</cite> and encoded labels <cite>self.df_encoded</cite></p>
+<dl class="method">
+<dt id="visualization.analysis.FeatureAnalysis.get_feature_importance">
+<code class="sig-name descname">get_feature_importance</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pandas.core.frame.DataFrame<a class="headerlink" href="#visualization.analysis.FeatureAnalysis.get_feature_importance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates feature weights using random forest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A DataFrame with feature weights</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="visualization.analysis.MaritalAnalysis">
+<em class="property">class </em><code class="sig-prename descclassname">visualization.analysis.</code><code class="sig-name descname">MaritalAnalysis</code><span class="sig-paren">(</span><em class="sig-param">csv_path</em><span class="sig-paren">)</span><a class="headerlink" href="#visualization.analysis.MaritalAnalysis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filters unknown marital status types from <cite>self.df</cite></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="visualization.analysis.number_to_day_of_week">
+<code class="sig-prename descclassname">visualization.analysis.</code><code class="sig-name descname">number_to_day_of_week</code><span class="sig-paren">(</span><em class="sig-param">df: Union[pandas.core.frame.DataFrame, pandas.core.series.Series, Iterable]</em><span class="sig-paren">)</span> &#x2192; Union[pandas.core.frame.DataFrame, pandas.core.series.Series, Iterable]<a class="headerlink" href="#visualization.analysis.number_to_day_of_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a DataFrame, Series, or Iterable with integers converted to the appropriate abbreviated day of the week.
+0 returns an empty string. Values outside [0 6] will raise an <cite>IndexError</cite>
+:param df: a <cite>pandas.DataFrame</cite> or <cite>pandas.Series</cite> object with integer values ranging from 0 to 6</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="visualization.analysis.number_to_month">
+<code class="sig-prename descclassname">visualization.analysis.</code><code class="sig-name descname">number_to_month</code><span class="sig-paren">(</span><em class="sig-param">df: Union[pandas.core.frame.DataFrame, pandas.core.series.Series, Iterable]</em><span class="sig-paren">)</span> &#x2192; Union[pandas.core.frame.DataFrame, pandas.core.series.Series, Iterable]<a class="headerlink" href="#visualization.analysis.number_to_month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a DataFrame, Series, or Iterable with integers converted to the appropriate abbreviated month. 0 returns
+an empty string. Values outside [0 12] will raise an <cite>IndexError</cite>
+:param df: a <cite>pandas.DataFrame</cite> or <cite>pandas.Series</cite> object with integer values ranging from 0 to 12</p>
+</dd></dl>
+
+</div>
+<div class="section" id="result-prediction">
+<h1>Result Prediction<a class="headerlink" href="#result-prediction" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-src.feature_extraction"></span><dl class="class">
+<dt id="src.feature_extraction.FeatureExtractor">
+<em class="property">class </em><code class="sig-prename descclassname">src.feature_extraction.</code><code class="sig-name descname">FeatureExtractor</code><span class="sig-paren">(</span><em class="sig-param">wd='../'</em>, <em class="sig-param">filepath='data/bank-additional-full.csv'</em><span class="sig-paren">)</span><a class="headerlink" href="#src.feature_extraction.FeatureExtractor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Feature extractor class for the bank data set. Calls pre_processing code and pre-processes the data. Then conducts the feature extraction tasks.
+:param wd: The default working directory. It should be set to the location of the src folder. For example: 'C:/Users/iocak/Desktop/git/ECE229-Project/src'
+:type wd: str, optional
+:param file_path: Location of the csv data file. Pass the location of 'bank-additional-full.csv' if you would like to change the default data path.
+:type file_path: str, optional</p>
+<dl class="method">
+<dt id="src.feature_extraction.FeatureExtractor.data_scaler">
+<code class="sig-name descname">data_scaler</code><span class="sig-paren">(</span><em class="sig-param">prep</em>, <em class="sig-param">scale_time=False</em><span class="sig-paren">)</span><a class="headerlink" href="#src.feature_extraction.FeatureExtractor.data_scaler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize the numerical variables. Subtract mean and divide by standard deviation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prep</strong> (<em>pandas.core.frame.DataFrame</em>) -- A pandas dataframe of preprocessed data.</p></li>
+<li><p><strong>scale_time</strong> (<em>bool</em><em>, </em><em>optional</em>) -- If True scales time columns(month, day_of_week) as well, default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pandas dataframe with the scaled numerical features.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pandas.core.frame.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.feature_extraction.FeatureExtractor.get_features">
+<code class="sig-name descname">get_features</code><span class="sig-paren">(</span><em class="sig-param">scale=True</em><span class="sig-paren">)</span><a class="headerlink" href="#src.feature_extraction.FeatureExtractor.get_features" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get final features. This method first preprocesses the data and then does the feature extraction. Finally it one-hot-encodes the data. These processes are done by using class methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>scale</strong> (<em>bool</em>) -- True by default, scales the features.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Final features to be used in machine learning tasks. (Pandas DataFrame)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pandas.core.frame.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.feature_extraction.FeatureExtractor.get_train_test_split">
+<code class="sig-name descname">get_train_test_split</code><span class="sig-paren">(</span><em class="sig-param">test_size=0.2</em>, <em class="sig-param">random_state=1</em>, <em class="sig-param">scale=True</em><span class="sig-paren">)</span><a class="headerlink" href="#src.feature_extraction.FeatureExtractor.get_train_test_split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train test splitting with desired parameters. Uses the result of get_features() method internally.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_size</strong> (<em>float</em><em>, </em><em>optional</em>) -- Test data size as the fraction of whole data size.</p></li>
+<li><p><strong>random_state</strong> (<em>float</em><em>, </em><em>optional</em>) -- Random state to be used in splitting.</p></li>
+<li><p><strong>scale</strong> (<em>bool</em><em>, </em><em>optional</em>) -- True by default, scales the features.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Train features, train labels, test features, test labels are returned in separate Pandas Dataframes in a tuple size of 4.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.feature_extraction.FeatureExtractor.load_preprocessed_data">
+<code class="sig-name descname">load_preprocessed_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.feature_extraction.FeatureExtractor.load_preprocessed_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Imports pre_processing library from src folder and loads the preprocessed data. If the change_wd option is True in the class constructor then imports pre_processing library from the new location else uses the default working directory. While reading the data uses the filepath string that was passed in the class constructor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>'df' which is the preprocessed Pandas dataframe.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pandas.core.frame.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.feature_extraction.FeatureExtractor.one_hot_encoder">
+<code class="sig-name descname">one_hot_encoder</code><span class="sig-paren">(</span><em class="sig-param">df</em>, <em class="sig-param">encode_time=True</em><span class="sig-paren">)</span><a class="headerlink" href="#src.feature_extraction.FeatureExtractor.one_hot_encoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do one hot encoding on the provided dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pandas.core.frame.DataFrame</em>) -- A pandas dataframe of bank data to be one-hot-encoded.</p></li>
+<li><p><strong>encode_time</strong> (<em>bool</em><em>, </em><em>optional</em>) -- Default is True. If True the columns month and day_of_week are one_hot_encoded too. Otherwise they are kept as integers.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pandas dataframe with the scaled numerical features.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pandas.core.frame.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="src.feature_extraction.get_feature_extractor">
+<code class="sig-prename descclassname">src.feature_extraction.</code><code class="sig-name descname">get_feature_extractor</code><span class="sig-paren">(</span><em class="sig-param">wd=''</em>, <em class="sig-param">filepath='data/bank-additional-full.csv'</em><span class="sig-paren">)</span><a class="headerlink" href="#src.feature_extraction.get_feature_extractor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kickstart the FeatureExtractor class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wd</strong> (<em>str</em><em>, </em><em>optional</em>) -- The default working directory. It should be set to the location of the src folder. For example: 'C:/Users/iocak/Desktop/git/ECE229-Project/src'</p></li>
+<li><p><strong>file_path</strong> (<em>str</em><em>, </em><em>optional</em>) -- Location of the csv data file. Pass the location of 'bank-additional-full.csv' if you would like to change the default data path.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns a FeatureExtractor object.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>class:<cite>FeatureExtractor</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-src.pre_processing"></span><dl class="class">
+<dt id="src.pre_processing.DfBankAdditional">
+<em class="property">class </em><code class="sig-prename descclassname">src.pre_processing.</code><code class="sig-name descname">DfBankAdditional</code><span class="sig-paren">(</span><em class="sig-param">filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#src.pre_processing.DfBankAdditional" title="Permalink to this definition">¶</a></dt>
+<dd><p>To be used with the bank-additional dataset from: <a class="reference external" href="https://archive.ics.uci.edu/ml/datasets">https://archive.ics.uci.edu/ml/datasets</a>/Bank+Marketing# Pass a pandas.DataFrame to the constructor to get started</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filepath</strong> (<em>str</em>) -- file path of bank dataset csv.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="src.pre_processing.DfBankAdditional.process_all">
+<code class="sig-name descname">process_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.pre_processing.DfBankAdditional.process_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>The dataframe is modified in-place, replacing unknown values with np.NaN, false values with <cite>0</cite>, and true values with <cite>1</cite>. This behavior can be modified by changing the class attribute <cite>mappings</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="src.pre_processing.DfBankAdditional.re_map_column">
+<code class="sig-name descname">re_map_column</code><span class="sig-paren">(</span><em class="sig-param">column: str</em><span class="sig-paren">)</span><a class="headerlink" href="#src.pre_processing.DfBankAdditional.re_map_column" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies the mapping in the <cite>self.mappings</cite> dict to the column name in <cite>column</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>column</strong> (<em>str</em>) -- name of the <cite>pd.DataFrame</cite> column to re-map</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="src.pre_processing.load_data">
+<code class="sig-prename descclassname">src.pre_processing.</code><code class="sig-name descname">load_data</code><span class="sig-paren">(</span><em class="sig-param">path: str</em><span class="sig-paren">)</span> &#x2192; src.pre_processing.DfBankAdditional<a class="headerlink" href="#src.pre_processing.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the csv located at <cite>path</cite>
+:param path: a string path to the bank-additional-full.csv file
+:return: a DfBankAdditional</p>
+</dd></dl>
+
+<span class="target" id="module-src.prediction"></span><dl class="function">
+<dt id="src.prediction.column_eliminator">
+<code class="sig-prename descclassname">src.prediction.</code><code class="sig-name descname">column_eliminator</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="headerlink" href="#src.prediction.column_eliminator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Eliminate columns from the feature data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>prep</strong> (<em>pandas.core.frame.DataFrame</em>) -- A pandas dataframe of the feature data.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pandas dataframe with the final features to be used in prediction.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pandas.core.frame.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.prediction.make_predictions">
+<code class="sig-prename descclassname">src.prediction.</code><code class="sig-name descname">make_predictions</code><span class="sig-paren">(</span><em class="sig-param">model='xgb'</em>, <em class="sig-param">tune=False</em>, <em class="sig-param">save=False</em>, <em class="sig-param">wd=''</em><span class="sig-paren">)</span><a class="headerlink" href="#src.prediction.make_predictions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train a desired model and make predictions on the test data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>str</em>) -- Name of the model to be used. Possible values: 'lr', 'rf', 'xgb'</p></li>
+<li><p><strong>tune</strong> (<em>bool</em>) -- False by default, make it True if you want to tune the hyper parameters</p></li>
+<li><p><strong>save</strong> (<em>bool</em>) -- False by default, make it True if you want to save the result, the results will be saved to /data folder.</p></li>
+<li><p><strong>wd</strong> (<em>str</em>) -- Path of the working directory, you need to provide the location of the git folder.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Predictions on the test data with the original test features.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pandas.core.frame.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-dashboard">
+<span id="dashboard"></span><h1>DashBoard<a class="headerlink" href="#module-dashboard" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="dashboard.age_distribution">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">age_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.age_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of distribution of people's responses based on age groups that they fall in.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.age_prob">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">age_prob</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.age_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of distribution of people's responses based on age groups that they fall in.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.contact_prob">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">contact_prob</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.contact_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives plot of probability of success based on how people were contacted, i.e, cell phone or telephone.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.contact_way_distribution">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">contact_way_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.contact_way_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives plot of distribution of people based on how they were contacted, i.e, cell phone or telephone.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.education_level_distribution">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">education_level_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.education_level_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives plot of distribution of people based on education level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.education_level_prob">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">education_level_prob</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.education_level_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of probability of success based on people's education level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.house_prob">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">house_prob</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.house_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives plot of probability of success based on people's housing status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.house_status_distribution">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">house_status_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.house_status_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of distribution of people based on housing status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.income_level_distribution">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">income_level_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.income_level_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives plot of distribution of people based on income level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.job_prob">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">job_prob</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.job_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of probability of success based on people's job level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.loan_prob">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">loan_prob</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.loan_prob" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives plot of probability of success based on people's loan status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.loan_status">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">loan_status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.loan_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of distribution of people based on loan status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.marital_state_distribution">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">marital_state_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.marital_state_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of distribution of people based on marital status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.marital_status_probab">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">marital_status_probab</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.marital_status_probab" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gives the plot of probability of success based on people's marital status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns a interactive graph of marital status distribution.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.predicted_prob_hist">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">predicted_prob_hist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.predicted_prob_hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the histogram of the predicted probabilities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Plots the prediction probability histogram.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="dashboard.prediction_pie_chart">
+<code class="sig-prename descclassname">dashboard.</code><code class="sig-name descname">prediction_pie_chart</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.prediction_pie_chart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot predicted telecaller success ratios on the test data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Plots the prediction pie chart.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>plotly.graph_objs._figure.Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-util"></span><dl class="function">
+<dt id="util.dynamic_predict">
+<code class="sig-prename descclassname">util.</code><code class="sig-name descname">dynamic_predict</code><span class="sig-paren">(</span><em class="sig-param">nr_employed=0</em>, <em class="sig-param">poutcome_success=0</em>, <em class="sig-param">emp_var_rate=0</em>, <em class="sig-param">pdays=0</em>, <em class="sig-param">cons_conf=0</em>, <em class="sig-param">euribor=0</em>, <em class="sig-param">no_income=0</em><span class="sig-paren">)</span><a class="headerlink" href="#util.dynamic_predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create predictions for new customers. Enter the inputs and get the probability.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nr_employed</strong> (<em>numpy.ndarray</em><em> or </em><em>list</em><em> or </em><em>int</em><em> or </em><em>float</em>) -- number of employees - quarterly indicator (numeric)</p></li>
+<li><p><strong>poutcome_success</strong> (<em>numpy.ndarray</em><em> or </em><em>list</em><em> or </em><em>int</em><em> or </em><em>float</em>) -- outcome of the previous marketing campaign (binary: 1 if success, 0 otherwise)</p></li>
+<li><p><strong>emp_var_rate</strong> (<em>numpy.ndarray</em><em> or </em><em>list</em><em> or </em><em>int</em><em> or </em><em>float</em>) -- employment variation rate - quarterly indicator (numeric)</p></li>
+<li><p><strong>pdays</strong> (<em>numpy.ndarray</em><em> or </em><em>list</em><em> or </em><em>int</em><em> or </em><em>float</em>) -- number of days that passed by after the client was last contacted from a previous campaign (numeric; 999 means client was not previously contacted)</p></li>
+<li><p><strong>cons_conf</strong> (<em>numpy.ndarray</em><em> or </em><em>list</em><em> or </em><em>int</em><em> or </em><em>float</em>) -- consumer confidence index - monthly indicator (numeric)</p></li>
+<li><p><strong>euribor</strong> (<em>numpy.ndarray</em><em> or </em><em>list</em><em> or </em><em>int</em><em> or </em><em>float</em>) -- euribor 3 month rate - daily indicator (numeric)</p></li>
+<li><p><strong>no_income</strong> (<em>numpy.ndarray</em><em> or </em><em>list</em><em> or </em><em>int</em><em> or </em><em>float</em>) -- binary income indicator, 1 if the customer job retired, student or unemployed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Array of predicted probabilities</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-test.generate_coverage_report">
+<span id="test"></span><h1>Test<a class="headerlink" href="#module-test.generate_coverage_report" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-test.test_analysis"></span><p>Test cases for analysis.py file where we perform preliminary analysis on the data.</p>
+<dl class="function">
+<dt id="test.test_analysis.test_filter_unknown_marital">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_filter_unknown_marital</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_filter_unknown_marital" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests filter_unknown_marital() fucntion in analysis.py. The filter_unknown_marital() function is used to filter out columns that have marital status field set to unknown.
+The test_filter_unknown_marital() checks to ensure that the filtered values do not contain unknown marital status.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_get_age_prob_success">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_get_age_prob_success</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_get_age_prob_success" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests get_age_prob_success() fucntion in analysis.py. The get_age_prob_success() function is used to compute the probability of a person subscribing to the term deposit based on the age group they fall into.
+The test_get_age_prob_success() checks if the percentage value returned is expected by ensuring that the percentage is in between 0 and 100 and the returned values are either floats or ints.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_get_column">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_get_column</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_get_column" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests get_column() fucntion in analysis.py. The get_column() function is used to retrieve a column from the dataset.
+The get_column function accepts the column name as an argument and returns the column from the dataframe.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_get_count">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_get_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_get_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests get_count() fucntion in analysis.py. The get_count() fucntion is used to compute the total number of customers contacted.
+The get_count() function accepts the column name as an argument and returns the total number of customers contacted depending on the different categorical values that the column takes.
+The test_get_count() checks if the value returned is expected by ensuring that the number returned is greater than 0 and the returned values are ints.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_get_feature_importance">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_get_feature_importance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_get_feature_importance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests get_feature_importance() fucntion in analysis.py. The get_feature_importance() function is used get a dataframe of feature importance
+The test_get_feature_importance() checks to ensure that the returned values are a pandas DataFrame object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_get_probabilities">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_get_probabilities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_get_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests get_probabilities() fucntion in analysis.py. The get_probabilities() function is used to compute the probability of a customer subscribing to the term deposit plan.
+The get_probabilities function accepts the column name as an argument and returns the probability of a customer saying yes to the term deposit plan depending on the different categorical values that the column takes.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_get_success_count">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_get_success_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_get_success_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests get_success_count() fucntion in analysis.py. The get_success_count() function is used to compute the number of customers subscribing to the term deposit plan.
+The get_success_count() function accepts the column name as an argument and returns the number of customers subscribing to the term deposit plan depending on the different categorical values that the column takes.
+The test_get_success_count() checks if the value returned is expected by ensuring that the number returned is greater than 0 and the returned values are ints.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_map_age">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_map_age</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_map_age" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests map_age() function in analysis.py. The mapping of age to age group is done by mapping age to labels. This function checks if the labels and mapping have consistent data types.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_number_to_day_of_week">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_number_to_day_of_week</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_number_to_day_of_week" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests number_to_day_of_week() fucntion in analysis.py. The number_to_day_of_week() function is used return the days of the week corresponding to the enumeration of days given in the dataframe.
+The test_number_to_day_of_week() checks to ensure that the returned values are days of the week and there are no stray values that are being returned.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_number_to_month">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_number_to_month</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_number_to_month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests number_to_month() fucntion in analysis.py. The number_to_month() function is used return the months corresponding to the enumeration of months given in the dataframe.
+The test_number_to_month() checks to ensure that the returned values are months and there are no stray values that are being returned.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_analysis.test_percentage_of_population">
+<code class="sig-prename descclassname">test.test_analysis.</code><code class="sig-name descname">test_percentage_of_population</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_analysis.test_percentage_of_population" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests percentage_of_population() fucntion in analysis.py. This function is used to compute the percentage of customers subscribing to the term deposit plan.
+The percentage_of_population() function accepts the column name as an argument and returns the percentage of customers subscribing to the term deposit plan depending on the different categorical values that the column takes.
+The test_percentage_of_population() checks if the percentage value returned is expected by ensuring that the percentage is in between 0 and 100 and the returned values are either floats or ints.</p>
+</dd></dl>
+
+<span class="target" id="module-test.test_dashboard"></span><dl class="function">
+<dt id="test.test_dashboard.test_dashboard">
+<code class="sig-prename descclassname">test.test_dashboard.</code><code class="sig-name descname">test_dashboard</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_dashboard.test_dashboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests dashboard.py.</p>
+</dd></dl>
+
+<span class="target" id="module-test.test_feature_extraction"></span><dl class="function">
+<dt id="test.test_feature_extraction.test_data_scaler">
+<code class="sig-prename descclassname">test.test_feature_extraction.</code><code class="sig-name descname">test_data_scaler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_feature_extraction.test_data_scaler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests data_scaler() function in feature_extraction.py.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_feature_extraction.test_get_feature_extractor">
+<code class="sig-prename descclassname">test.test_feature_extraction.</code><code class="sig-name descname">test_get_feature_extractor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_feature_extraction.test_get_feature_extractor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the get_feature_extractor() function in feature_extraction.py.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_feature_extraction.test_get_features">
+<code class="sig-prename descclassname">test.test_feature_extraction.</code><code class="sig-name descname">test_get_features</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_feature_extraction.test_get_features" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the get_features() function in feature_extraction.py..</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_feature_extraction.test_get_train_test_split">
+<code class="sig-prename descclassname">test.test_feature_extraction.</code><code class="sig-name descname">test_get_train_test_split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_feature_extraction.test_get_train_test_split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the get_train_test_split() function in feature_extraction.py..</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_feature_extraction.test_load_preprocessed_data">
+<code class="sig-prename descclassname">test.test_feature_extraction.</code><code class="sig-name descname">test_load_preprocessed_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_feature_extraction.test_load_preprocessed_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests lead_preprocessed_data() function in feature_extraction.py.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_feature_extraction.test_one_hot_encoder">
+<code class="sig-prename descclassname">test.test_feature_extraction.</code><code class="sig-name descname">test_one_hot_encoder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_feature_extraction.test_one_hot_encoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the one_hot_encoder() function in feature_extraction.py.</p>
+</dd></dl>
+
+<span class="target" id="module-test.test_pre_processing"></span><dl class="function">
+<dt id="test.test_pre_processing.test_load_data">
+<code class="sig-prename descclassname">test.test_pre_processing.</code><code class="sig-name descname">test_load_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_pre_processing.test_load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for the load_data() method of pre_processing.py</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_pre_processing.test_process_all">
+<code class="sig-prename descclassname">test.test_pre_processing.</code><code class="sig-name descname">test_process_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_pre_processing.test_process_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for the process_all() method of DfBankAdditional class.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_pre_processing.test_re_map_column">
+<code class="sig-prename descclassname">test.test_pre_processing.</code><code class="sig-name descname">test_re_map_column</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_pre_processing.test_re_map_column" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for the re_map_column() method of DfBankAdditional class.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_pre_processing.test_validate">
+<code class="sig-prename descclassname">test.test_pre_processing.</code><code class="sig-name descname">test_validate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_pre_processing.test_validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for the _validate() method of DfBankAdditional class.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_pre_processing.test_validate_all">
+<code class="sig-prename descclassname">test.test_pre_processing.</code><code class="sig-name descname">test_validate_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_pre_processing.test_validate_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for the _validate_all() method of DfBankAdditional class.</p>
+</dd></dl>
+
+<span class="target" id="module-test.test_prediction"></span><dl class="function">
+<dt id="test.test_prediction.test_column_eliminator">
+<code class="sig-prename descclassname">test.test_prediction.</code><code class="sig-name descname">test_column_eliminator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_prediction.test_column_eliminator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the column_eliminator() function in prediction.py</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="test.test_prediction.test_make_predictions">
+<code class="sig-prename descclassname">test.test_prediction.</code><code class="sig-name descname">test_make_predictions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_prediction.test_make_predictions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests the make_predictions() function in prediction.py</p>
+</dd></dl>
+
+<span class="target" id="module-test.test_util"></span><dl class="function">
+<dt id="test.test_util.test_util">
+<code class="sig-prename descclassname">test.test_util.</code><code class="sig-name descname">test_util</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test.test_util.test_util" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests util.py which has a dynamic_predict() function which is used to obtain predictions in a dynamic manner.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Groups
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
